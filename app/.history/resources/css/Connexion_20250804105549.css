@@ -1,0 +1,120 @@
+/* Global style for dark theme with your color */
+.connexion-dark-container {
+    min-height: 100vh;
+    background-color: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .connexion-dark-card {
+    background-color: #1e293b;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    color: #f1f5f9;
+    transition: transform 0.4s ease;
+  }
+  
+  .connexion-dark-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .connexion-dark-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #f8fafc;
+    animation: slideInDown 0.6s ease-out;
+  }
+  
+  .connexion-dark-input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s, background 0.3s;
+  }
+  
+  .connexion-dark-input:focus {
+    border-color: #3b82f6;
+    background-color: #1e293b;
+  }
+  
+  .connexion-dark-button {
+    width: 100%;
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .connexion-dark-button:hover {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  }
+  
+  .connexion-dark-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cbd5e1;
+  }
+  
+  .connexion-dark-footer a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .connexion-dark-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .connexion-dark-error {
+    background-color: #f87171;
+    color: white;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.98); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  img{
+    position: relative;
+    width: 100px;
+  }
+
+  .con{
+    display: flex;
+    padding: 20px;
+  }
