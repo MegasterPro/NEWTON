@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 import Read from '@/components/read';
 
 const Home = () => {
-  return (<>
+  return (<d
         <div className="relative min-h-screen font-sans">
             <Header />
             <Hero />
@@ -25,7 +25,15 @@ const Home = () => {
         <div>
             <Footer />
         </div>
-    </>);
+    </d);
+       </div>
+    </div>)}
+    </div>
+  );
+       </div>
+    </div>)}
+    </div>
+  );
 };
 
 export default Home;
