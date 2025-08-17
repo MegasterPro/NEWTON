@@ -1,0 +1,49 @@
+.trophee-section {
+    padding: 80px 20px;
+    background: #0a0f1f;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .trophee-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .trophee-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .trophee-icon svg {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  
+  .trophee-icon:hover svg {
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 0 10px #ffcc4d);
+  }
+  
+  .trophee-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 600px;
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .trophee-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .trophee-text {
+      font-size: 1rem;
+    }
+  }
+  

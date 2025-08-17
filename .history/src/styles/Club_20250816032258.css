@@ -1,0 +1,91 @@
+/* Club.css */
+.club-section {
+  height: 400vh; /* 1 écran par club */
+  background: linear-gradient(90deg, #0a0f1f, #12192c);
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bubble {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.bubble:hover {
+  transform: rotateX(15deg) rotateY(15deg) scale(1.05);
+}
+
+.particles {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  filter: blur(120px);
+  animation: pulse 6s infinite ease-in-out;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 0.9; }
+}
+
+.club-card {
+  margin-top: 1rem;
+  background: rgba(20, 20, 20, 0.85);
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  width: 260px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  z-index: 10;
+}
+
+.club-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.club-card p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}

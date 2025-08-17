@@ -1,0 +1,106 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* prend toute la hauteur de l'écran */
+    overflow: hidden;
+  }
+  
+  .hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Overlay sombre */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 15, 30, 0.6);
+    z-index: 1;
+  }
+  
+  /* Contenu centré */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    animation: fadeDown 1s ease-in-out;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    animation: fadeUp 1.2s ease-in-out;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00d4ff;
+    color: #0a0f1f;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    animation: fadeUp 1.4s ease-in-out;
+  }
+  
+  .hero-btn:hover {
+    background: #009bbd;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  

@@ -1,0 +1,107 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    background: linear-gradient(90deg, #0a0f1f, #12192c);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+  }
+  
+  .logo-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+  .logo-img {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .header-right ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .header-right a {
+    text-decoration: none;
+    color: #9ccaff;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .header-right a:hover {
+    color: #00d4ff;
+  }
+  
+  .header-right a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #00d4ff;
+    transition: width 0.3s ease;
+  }
+  
+  .header-right a:hover::after {
+    width: 100%;
+  }
+  
+  /* ============ MOBILE ============ */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .header-right {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: rgba(15, 20, 40, 0.95);
+      width: 200px;
+      transform: translateX(100%);
+      transition: transform 0.4s ease-in-out;
+      border-left: 2px solid #00d4ff;
+      padding: 15px 0;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.4);
+    }
+  
+    .header-right.active {
+      transform: translateX(0);
+    }
+  
+    .header-right ul {
+      flex-direction: column;
+      gap: 15px;
+      padding: 0 20px;
+    }
+  
+    /* Animation des liens en cascade */
+    .header-right.active ul li {
+      opacity: 0;
+      transform: translateX(20px);
+      animation: slideIn 0.4s forwards;
+      animation-delay: calc(var(--i) * 0.1s);
+      cu
+    }
+  
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+  

@@ -1,0 +1,24 @@
+.club-section {
+    height: 400vh; /* un grand container pour tout le scroll */
+    position: relative;
+    background: #0a0a0a;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .sticky-wrapper {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bubble-wrapper {
+    position: absolute; /* chaque bulle occupe le centre */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  

@@ -1,0 +1,65 @@
+.clubs {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    perspective: 1000px;
+  }
+  
+  /* Base style des boules */
+  .ball {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: inset -10px -10px 30px rgba(0,0,0,0.6),
+                inset 10px 10px 30px rgba(255,255,255,0.1),
+                0 0 30px rgba(0,0,0,0.4);
+    transform: translateY(-150vh) scale(0.5) rotateX(90deg);
+    animation: dropBall 1.5s ease-out forwards;
+  }
+  
+  /* Chaque boule avec couleur différente */
+  .sciences {
+    background: radial-gradient(circle at 30% 30%, #00f5ff, #005f73);
+    animation-delay: 0.2s;
+  }
+  .english {
+    background: radial-gradient(circle at 30% 30%, #ff8fab, #d62828);
+    animation-delay: 0.6s;
+  }
+  .litterature {
+    background: radial-gradient(circle at 30% 30%, #ffda77, #ff9100);
+    animation-delay: 1s;
+  }
+  .arts {
+    background: radial-gradient(circle at 30% 30%, #b388ff, #3f37c9);
+    animation-delay: 1.4s;
+  }
+  
+  /* Animation arrivée + descente + effet 3D */
+  @keyframes dropBall {
+    0% {
+      transform: translateY(-150vh) scale(0.5) rotateX(90deg);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(30px) scale(1.2) rotateX(0deg);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(-10px) scale(0.9) rotateX(0deg);
+    }
+    100% {
+      transform: translateY(0) scale(1) rotateX(0deg);
+    }
+  }
+  
