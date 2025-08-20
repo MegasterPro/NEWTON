@@ -31,7 +31,7 @@ Ce projet a été pensé pour offrir une **expérience immersive** à travers un
 
 ## 📸 Aperçu du projet
 
-![Preview du projet](https://navajowhite-hummingbird-793822.hostingersite.com/)
+![Preview du projet](./images/preview.png)
 
 ---
 
