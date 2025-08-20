@@ -1,0 +1,95 @@
+.club3d-section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(90deg, #0a0f1f, #12192c);
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  z-index: 10;
+}
+
+.club-card {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 20, 30, 0.9);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  z-index: 20;
+}
+
+.club-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.club-card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.club-card button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.club-card button:hover {
+  background: #ddd;
+}
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+  .club-card {
+    width: 260px;
+    padding: 1.2rem 1.5rem;
+  }
+  .club-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.6rem;
+    top: 10px;
+  }
+  .club-card {
+    width: 30%;
+    bottom: 20px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .club-card h2 {
+    font-size: 1.3rem;
+  }
+  .club-card p {
+    font-size: 0.9rem;
+  }
+  .club-card button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}

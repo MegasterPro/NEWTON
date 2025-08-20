@@ -1,0 +1,49 @@
+.apropos-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .apropos-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .apropos-intro {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .apropos-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .apropos-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .apropos-card:hover {
+    transform: translateY(-6px);
+    background: #ffffff;
+  }
+  
+  .apropos-card h2 {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .apropos-card p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  

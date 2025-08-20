@@ -1,0 +1,50 @@
+.programme {
+    padding: 2rem;
+    background: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .programme h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .programme .intro {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .programme-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .programme-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .programme-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  }
+  
+  .programme-card h2 {
+    font-size: 1.4rem;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .programme-card p {
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
